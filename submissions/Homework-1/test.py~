@@ -1,0 +1,33 @@
+import requests
+import xml.dom.minidom
+
+key = ""
+with open('key.txt','r') as f:
+    key = f.readline().strip()
+
+if len(key) > 0:
+    print "Succesfully retrieved API key"
+
+response = requests.get("http://api.nytimes.com/svc/books/v3/lists/names.xml?api-key=%s"%(key))
+xml_parser = xml.dom.minidom.parseString(response.text)
+pretty_response = xml_parser.toprettyxml()
+
+def print_names_from_XML(response):
+    """Prints the names of all the best-seller lists that are in the response.
+    
+    Parameters:
+        response: Response object
+        The response object that is a result of a get request for the names of the
+        best-selling lists from the Books API. 
+    
+    """   
+    xml_parser = xml.dom.minidom.parseString(response.text)
+    pretty_response = xml_parser.toprettyxml().split('\n')
+
+    for section in pretty_response:
+        if section.startsWith('<display_name>'):
+            print section.strip('<display_name')
+    
+
+response = requests.get("http://api.nytimes.com/svc/books/v3/lists/names.xml?api-key=%s"%(key))
+print_names_from_XML(response)
