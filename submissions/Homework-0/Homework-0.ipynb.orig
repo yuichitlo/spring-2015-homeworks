@@ -2,9 +2,9 @@
  "metadata": {
   "name": "",
 <<<<<<< HEAD
-  "signature": "sha256:b38ef9c7505fcc6bacdf19eb653fe30e03e88f06c2fdad0ecf7cdd7235e10ceb"
+  "signature": "sha256:5ed55a3b9f5505d3d36f5aab4f6b4854591e583aca9968f583df5b6ba8a87e93"
 =======
-  "signature": "sha256:ff2a8e6e2fd57a93d9ec40053fb1de62f000c97e750a7d1c96dfbcaaaf029d57"
+  "signature": "sha256:b38ef9c7505fcc6bacdf19eb653fe30e03e88f06c2fdad0ecf7cdd7235e10ceb"
 >>>>>>> suffix_3
  },
  "nbformat": 3,
@@ -207,7 +207,48 @@
      ],
      "language": "python",
      "metadata": {},
-     "outputs": []
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "numpy: 1.9.0\n",
+        "scipy:"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        " 0.14.0\n",
+        "matplotlib:"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        " 1.4.0\n",
+        "scikit-learn:"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        " 0.15.2\n",
+        "pandas:"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        " 0.14.1\n"
+       ]
+      }
+     ],
+     "prompt_number": 4
     },
     {
      "cell_type": "heading",
