@@ -190,13 +190,14 @@ def parse_hotellist_pages(city, datadir='data/'):
             html = h.read()
             soup = BeautifulSoup(html)
             # Extract hotel name, star rating and number of reviews
-            hotel_boxes += soup.findAll('div', {'class' :'listing wrap reasoning_v5_wrap jfy_listing p13n_imperfect'})
-            if not hotel_boxes:
+            cur_hotel_boxes = soup.findAll('div', {'class' :'listing wrap reasoning_v5_wrap jfy_listing p13n_imperfect'})
+            if not cur_hotel_boxes:
                # log.info("#################################### Option 2 ######################################")
-                hotel_boxes += soup.findAll('div', {'class' :'listing_info jfy'})
-            if not hotel_boxes:
+                cur_hotel_boxes = soup.findAll('div', {'class' :'listing_info jfy'})
+            if not cur_hotel_boxes:
                 #log.info("#################################### Option 3 ######################################")
-                hotel_boxes += soup.findAll('div', {'class' :'listing easyClear  p13n_imperfect'})
+                cur_hotel_boxes = soup.findAll('div', {'class' :'listing easyClear  p13n_imperfect'})
+            hotel_boxes += cur_hotel_boxes
         h.close()
         c += 1
         cur_file = os.path.join(datadir, city + '-hotelist-' + str(c) + '.html')
@@ -269,13 +270,13 @@ if __name__ == "__main__":
     parser.add_argument('-datadir', type=str,
                         help='Directory to store raw html files',
                         default="data/")
-    parser.add_argument('-state', type=str,
-                        help='State for which the hotel data is required.',
-                        required=True)
+    #parser.add_argument('-state', type=str,
+    #                    help='State for which the hotel data is required.',
+    #                    required=True)
     parser.add_argument('-city', type=str,
                         help='City for which the hotel data is required.',
                         required=True)
 
     args = parser.parse_args()
-    scrape_hotels(args.city, args.state, args.datadir)
+    #scrape_hotels(args.city, args.state, args.datadir)
     parse_hotellist_pages(args.city, args.datadir)
