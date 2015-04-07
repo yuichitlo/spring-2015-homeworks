@@ -1,0 +1,21 @@
+[<span class="compositeCount">1,876</span>, <span class="compositeCount">506</span>, <span class="compositeCount">98</span>, <span class="compositeCount">33</span>, <span class="compositeCount">31</span>]
+[<span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s45" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars" />
+</span>, <span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s45" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars" />
+</span>, <span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s45" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars" />
+</span>, <span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s45" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars" />
+</span>, <span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s45" src="http://e2.tacdn.com/img2/x.gif" alt="4.5 of 5 stars" />
+</span>, <span class="rate sprite-rating_s rating_s">
+<img class="sprite-rating_s_fill rating_s_fill s50" src="http://e2.tacdn.com/img2/x.gif" alt="5 of 5 stars" />
+</span>]
+['Location', 'Sleep Quality', 'Rooms', 'Service', 'Value', 'Cleanliness']
+0
+1
+2
+3
+4
+5
